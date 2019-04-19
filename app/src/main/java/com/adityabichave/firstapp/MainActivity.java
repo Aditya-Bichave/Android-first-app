@@ -30,9 +30,18 @@ public class MainActivity extends AppCompatActivity {
                 String spassword = etxPassword.getText().toString();
 
                 if (TextUtils.isEmpty(susername)) {
-                    etxUsername.setError("Required");
+                    etxUsername.setError("required...");
                     return;
                 }
+
+                if (TextUtils.isEmpty(spassword)) {
+                    etxPassword.setError("Required..");
+                    return;
+                }
+                if (username.equals(susername) && password.equals(spassword)) {
+
+                }
+
             }
         })
     }
