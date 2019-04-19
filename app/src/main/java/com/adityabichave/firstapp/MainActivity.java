@@ -1,5 +1,6 @@
 package com.adityabichave.firstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -39,10 +40,11 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 if (username.equals(susername) && password.equals(spassword)) {
-
+                    Intent intent1 = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(intent1);
                 }
 
             }
-        })
+        });
     }
 }
